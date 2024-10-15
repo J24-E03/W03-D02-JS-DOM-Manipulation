@@ -306,6 +306,11 @@ footer {
     border-radius: inherit;
 }
 
+.shopping-cart {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .testimonial-card:hover {
 }
 
