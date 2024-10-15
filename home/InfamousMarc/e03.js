@@ -4,7 +4,6 @@ class ShoppingCart {
         this.products = document.querySelectorAll("#products-container button.btn");
         this.shoppingCart = document.querySelector("#cart-items");
         this.products.forEach(product => {
-            console.log(product);
             product.addEventListener("click", this.addItem.bind(this, product));
         });
     }
