@@ -1,3 +1,4 @@
+//Exercise 1
 let passwordInput = document.getElementById("user_password")
 let submitButton = document.getElementById("submit_button")
 let hintMessage = document.getElementById("hint")
@@ -26,3 +27,28 @@ submitButton.addEventListener("click", function(){
          submitButton.innerHTML = "Done!"
     }
 })
+
+    //Exercise 2
+    let arrayStudenNames = ["Aron", "Martine", "Kathrin", "Kai", "Maryam", "Sumayya", "Marcel", "Paul"]
+    function convertArrayToString(arrayName)
+    {
+        let studenNamesString = ""
+        for (let i = 0; i < arrayName.length; i++) {
+            if (arrayName[i] === "Kathrin")
+            {
+                studenNamesString += "Kathrin Zirbes";
+            }
+            else {
+                studenNamesString += arrayName[i]
+            }
+            if (i != arrayName.length -1) {
+                studenNamesString += " "
+            }
+        }
+
+        return studenNamesString
+    }
+    console.log(convertArrayToString(arrayStudenNames))
+
+    let stuNames = document.getElementById("student_names")
+    stuNames.innerHTML = convertArrayToString(arrayStudenNames)
