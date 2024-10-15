@@ -80,7 +80,7 @@ submitButton.addEventListener("click", function(){
         console.log("Empty array of numbers")
     }
 
-    //Exercise 4
+    //Exercise 4 simple solution just in console
     let actor2 = {
         name: "Leonardo DiCaprio",
         age: 49,
@@ -91,6 +91,7 @@ submitButton.addEventListener("click", function(){
         console.log(`${actor2.name} has been in some movies`)
     }
 
+    //Exercise 4 complicated solution to interact with user
     let submitActorButton = document.getElementById("submit_actor");
     let actorInfo = document.getElementById("actor_info");
 
@@ -116,3 +117,10 @@ submitButton.addEventListener("click", function(){
     console.log(actor2); 
 });
 
+//Exercise 5
+let classMembers = document.getElementsByClassName("students")
+
+for (let i= 0; i <classMembers.length; i++)
+{
+    classMembers[i].innerHTML += " is in Java course"
+}
