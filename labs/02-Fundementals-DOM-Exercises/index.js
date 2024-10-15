@@ -79,3 +79,40 @@ submitButton.addEventListener("click", function(){
     else {
         console.log("Empty array of numbers")
     }
+
+    //Exercise 4
+    let actor2 = {
+        name: "Leonardo DiCaprio",
+        age: 49,
+        movies: ["Inception", "Titanic", "The Wolf of Wall Street", "The Revenant", "Shutter Island"]
+    }
+
+    if (actor2.movies && actor2.movies.length > 0) {
+        console.log(`${actor2.name} has been in some movies`)
+    }
+
+    let submitActorButton = document.getElementById("submit_actor");
+    let actorInfo = document.getElementById("actor_info");
+
+    submitActorButton.addEventListener("click", function() {
+    let name = document.getElementById("actor_name").value;
+    let age = document.getElementById("actor_age").value;
+    let movies = document.getElementById("actor_movies").value.split(",");
+
+  
+    let actor2 = {
+        name: name,
+        age: Number(age), 
+        movies: movies.map(movie => movie.trim()) 
+    };
+
+   
+    if (actor2.movies && actor2.movies.length > 0) {
+        actorInfo.innerHTML = `${actor2.name} has been in the following movies: ${actor2.movies.join(", ")}`;
+    } else {
+        actorInfo.innerHTML = `${actor2.name} has not been in any movies.`;
+    }
+
+    console.log(actor2); 
+});
+
