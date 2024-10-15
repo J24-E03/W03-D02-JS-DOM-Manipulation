@@ -4,9 +4,9 @@ class Array {
         this.addRange(
             [700, 17, 85, 78, 15, 37, 37, 14, 83, 34]
         );
-        this.buttoncheck = document.querySelector("#check");
+        this.buttonCheck = document.querySelector("#check");
         this.elementResult = document.querySelector("#result");
-        this.buttoncheck.addEventListener("click", this.render.bind(this));
+        this.buttonCheck.addEventListener("click", this.render.bind(this));
     }
 
     addRange(items) {
