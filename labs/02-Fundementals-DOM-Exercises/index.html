@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Exercise: Part 2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            text-align: center;
+        }
+
+        h2 {
+            color: #555; 
+            margin-bottom: 20px; 
+        }
+
+        input[type="password"] {
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            font-size: medium;
+        }
+
+        button {
+            padding: 10px 15px; 
+            margin: 5px; 
+            border: none; 
+            border-radius: 5px; 
+            background-color: #19733f; 
+            color: white; 
+            font-size: medium;
+        }
+
+        #hint {
+            color: red; 
+            margin-top: 20px; 
+            font-weight: bold;
+        }
+
+        #student_names {
+             font-size: large;
+             color: #19733f;  
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #19733f; 
+            border-radius: 5px; 
+            background-color: #f0fdf4; 
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            margin: 0 auto; 
+            width: 250px; 
+        }
+
+        input[type="password"], input[type="text"], input[type="number"] {
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            font-size: medium;
+        }
+
+        #actor_info {
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        ol {
+            padding-left: 20px; 
+            margin: 20px auto; 
+            width: 50%; 
+            border: 1px solid #19733f;
+            border-radius: 5px; 
+            background-color: #f0fdf4; 
+        }
+        .students {
+            padding: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <h2>Please enter a password to complete your sign up:</h2>
+    <input type="password" id="user_password">
+    <button id="submit_button">Submit</button>
+    <p id="hint"></p>
+
+    <hr>
+
+    <h2>Student Names:</h2>
+    <p id="student_names"></p>
+
+    <hr>
+
+    <h2>Enter Actor Details:</h2>
+    <div class="input-container">
+        <div>
+            <label for="actor_name">Actor Name:</label>
+            <input type="text" id="actor_name"><br>
+        </div>
+     <div>
+        <label for="actor_age">Actor Age:</label>
+        <input type="number" id="actor_age"><br>
+     </div>
+     <div>
+        <label for="actor_movies">Movies (separate by commas):</label>
+        <input type="text" id="actor_movies"><br>
+     </div>
+    </div>
+    
+    <button id="submit_actor">Submit Actor Details</button>
+    <p id="actor_info"></p>
+
+    <hr>
+    <ol>
+        <li class="students">Kai</li>
+        <li class="students">Paul</li>
+        <li class="students">Marcel</li>
+        <li class="students">Martine</li>
+        <li class="students">Sumayya</li>
+        <li class="students">Aron</li>
+        <li class="students">Kathrin</li>
+        <li class="students">Maryam</li>
+    </ol>
+    <script src="./index.js"></script>
+</body>
+</html>
