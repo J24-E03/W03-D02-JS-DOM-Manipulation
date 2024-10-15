@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM List Manipulator</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .list-group {
+            padding-bottom: 20px;
+        }
+        .list-group-item {
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .list-group-item:hover {
+            background-color: #e9ecef;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ol class="list-group">
+            <li class="students list-group-item">Kai</li>
+            <li class="students list-group-item">Paul</li>
+            <li class="students list-group-item">Marcel</li>
+            <li class="students list-group-item">Martine</li>
+            <li class="students list-group-item">Sumayya</li>
+            <li class="students list-group-item">Aron</li>
+            <li class="students list-group-item">Kathrin</li>
+            <li class="students list-group-item">Maryam</li>
+        </ol>
+        <button id="check" class="btn btn-primary">
+            Which person is a student?
+        </button>
+    </div>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="e02-5.js" defer></script>
+</body>
+</html>
