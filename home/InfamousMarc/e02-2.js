@@ -10,17 +10,17 @@ class Array {
         this.buttonTransform.addEventListener("click", this.render.bind(this));
     }
 
-    addRange(names) {
-        this.array.push(...names);
+    addRange(items) {
+        this.array.push(...items);
     }
 
-    replace(name, newName) {
-        const index = this.array.indexOf(name);
+    replace(value, newValue) {
+        const index = this.array.indexOf(value);
         if (index === -1) {
-            throw new Error('Name not found');
+            throw new Error('Value not found');
         }
 
-        this.array[index] = newName;
+        this.array[index] = newValue;
     }
 
     toString() {
