@@ -52,3 +52,30 @@ submitButton.addEventListener("click", function(){
 
     let stuNames = document.getElementById("student_names")
     stuNames.innerHTML = convertArrayToString(arrayStudenNames)
+
+
+    //Exercise 3
+    let numbersArr = [700, 17, 85, 78, 15, 37, 37, 14, 83, 34]
+
+    function returnBiggestNumIndex (arrayOfNumbers)
+    {
+        if (arrayOfNumbers.length === 0) {
+            return -1
+        }
+        let biggestNumIndex = 0
+        for (let i = 1; i < arrayOfNumbers.length; i++) {
+            if (arrayOfNumbers[i] > arrayOfNumbers[biggestNumIndex]) {
+                biggestNumIndex = i; 
+            }
+        }
+        return biggestNumIndex
+    }
+
+    let bigNumIndex = returnBiggestNumIndex(numbersArr)
+    if (bigNumIndex != -1)
+    {
+        console.log(`The Index of the biggest number in this array is: ${bigNumIndex}`)
+    }
+    else {
+        console.log("Empty array of numbers")
+    }
